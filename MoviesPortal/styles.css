@@ -1,0 +1,51 @@
+.logo {
+    max-width: 100px;
+}
+
+.lancamentos h1 {
+    text-align: center;
+}
+
+.video {
+    background-color: black;
+    min-height: 400px;
+}
+
+.descricao_lancamento {
+    background-color: gray;
+    min-height: 400px;
+}
+
+.carrossel {
+    background-color: green;
+    min-height: 150px;
+}
+
+.destaque {
+    background-color: hotpink;
+    border: 2px solid white;
+    min-height: 400px;
+}
+
+.avaliacao {
+    background-color: salmon;
+    border: 2px solid white;
+    min-height: 300px;
+}
+
+.entrevista {
+    background-color: springgreen;
+    border: 2px solid white;
+    min-height: 300px;
+}
+
+.novidade {
+    background-color: thistle;
+    border: 2px solid gray;
+    min-height: 200px;
+}
+
+.logo_rede_social {
+    max-width: 40px;
+    max-height: 40px;
+}
