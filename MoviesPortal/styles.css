@@ -1,6 +1,15 @@
 body {
-    background-color: #111111;
+    background-color: #090809;
     color: white;
+}
+
+.estrela_desativada {
+    opacity: 0.5;
+}
+
+.dropdown {
+    float: right;
+    display: inline;
 }
 
 /* Aba Lançamentos */
@@ -10,21 +19,27 @@ body {
 }
 
 .lancamentos {
-    background-color: #1f1d1d;
-    padding: 2% 10%;
+    background-color: #111011;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1.5em;
 }
 
 .lancamentos h1 {
     text-align: center;
-    margin-bottom: 4%;
+    margin: 1.5em 0em;
 }
 
 .descricao_lancamento {
-    padding: 0 2% 2% 2%;
+    padding: 0 0 1em 1em;
 }
 
-.hightlight {
-    color: #eead08;
+.highlight {
+    color: #ffc857;
+}
+
+.video {
+    width: 100%;
 }
 
 .video > iframe {
@@ -39,7 +54,6 @@ body {
 
 .direcao_do_filme > text {
     padding-right: 1em;
-    max-width: 33%;
 }
 
 .sinopse {
@@ -63,12 +77,12 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 2%;
     padding: 1.5em;
+    margin-top: 1.5em;
 }
 
 .bolinha_carrossel {
-    background-color: lightgrey;
+    background-color: gray;
     height: 8px;
     width: 8px;
     border-radius: 50%;
@@ -77,25 +91,77 @@ body {
 }
 
 .bolinha_carrossel:nth-child(1) {
-    background-color: gray;
+    background-color: #ffc857;
+}
+
+/* Aba destaques */
+
+.header_destaque > h1 {
+    display: inline;
+}
+
+.header_destaque {
+    margin: 2.5em 0;
+}
+
+.destaque {
+    max-height: 500px;
+    max-width: 330px;
+    margin-bottom: 1em;
+}
+
+.destaque > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.div_carregar_mais {
+    margin: 1em 0;
+    text-align: right;
+}
+
+.carregar_mais {
+    color: #ffc857;
+}
+
+/* Aba Avaliações */
+.avaliacoes > h1 {
+    margin: 1em 0;
+}
+
+.avaliacao {
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.foto_avaliador {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.texto_avaliacao > p {
+    text-align: justify;
+}
+
+.estrelas_avaliacao_usuario > text {
+    margin-left: 1em;
+}
+
+.estrela_avaliacao_usuario {
+    width: 1.5em;
+}
+
+/* Aba Entrevistar */
+
+.entrevistas > h1 {
+    margin: 1em 0;
 }
 
 /* --- */
 
 .logo {
     max-width: 50px;
-}
-
-.destaque {
-    background-color: hotpink;
-    border: 2px solid white;
-    min-height: 400px;
-}
-
-.avaliacao {
-    background-color: salmon;
-    border: 2px solid white;
-    min-height: 300px;
 }
 
 .entrevista {
@@ -117,7 +183,7 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:576px) {
     .direcao_do_filme > text {
         display: block;
         max-width: 100%;
@@ -129,5 +195,40 @@ body {
 
     .separador_ator {
         display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .descricao_lancamento {
+        padding: 0;
+        margin-top: 1.5em;
+    }
+
+    .video_coluna {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dropdown {
+        display: none;
+    }
+
+    .header_destaque {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .em_destaque {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div_carregar_mais {
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 }

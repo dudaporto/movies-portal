@@ -36,27 +36,29 @@
         <section class="row lancamentos">
             <h1>Lançamentos</h1>
             
-            <div class="col-12 col-lg-6 video">
-                <iframe src="https://www.youtube.com/embed/Gm3o0bfGP3g" title="YouTube video player" allowfullscreen></iframe>
+            <div class="col-12 col-lg-6 video_coluna">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/Gm3o0bfGP3g" title="YouTube video player" allowfullscreen></iframe>
+                </div>
             </div>
 
             <div class="col-12 col-lg-6 descricao_lancamento">
-                <h3><b>Viúva Negra</b></h3>
+                <h2>Viúva Negra</h2>
                 <p class="sinopse">
-                    <b class="hightlight">Sinopse:</b> No novo filme da Marvel Studios, "Viúva Negra", Natasha Romanoff 
+                    <b class="highlight">Sinopse:</b> No novo filme da Marvel Studios, "Viúva Negra", Natasha Romanoff 
                     (Scarlett Johansson) precisa confrontar partes de sua história quando surge uma conspiração perigosa 
                     ligada ao seu passado. Perseguida por uma força que não irá parar até derrotá-la, Natasha terá que lidar 
                     com sua antiga vida de espiã, e também reencontrar membros de sua família que deixou para trás antes de se 
                     tornar parte dos Vingadores.
                 </p>
                 <div class="direcao_do_filme">
-                    <text><b class="hightlight">Direção: </b>Cate Shortland</text>
-                    <text><b class="hightlight">Roteiro: </b>Stan Lee</text>
-                    <text><b class="hightlight">Estreia: </b>2021</text>
+                    <text><b class="highlight">Direção: </b>Cate Shortland</text>
+                    <text><b class="highlight">Roteiro: </b>Stan Lee</text>
+                    <text><b class="highlight">Estreia: </b>2021</text>
                 </div>
 
                 <div class="elenco">
-                    <p><b class="hightlight">Elenco: </b></p> 
+                    <p><b class="highlight">Elenco: </b></p> 
                     <text>Scarlett Johansson</text><span class="separador_ator">|</span>
                     <text>Florence Pugh</text><span class="separador_ator">|</span>
                     <text>David Harbour</text><span class="separador_ator">|</span>
@@ -64,13 +66,13 @@
                 </div>
 
                 <div class="avaliacao_estrelas">
-                    <p><b>Avaliação: </b></p> 
+                    <p><b class="highlight">Avaliação: </b></p> 
                     <div class="estrelas">
                         <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
                         <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
                         <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
                         <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao" src="imgs/estrela-vazia.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
                     </div>
                 </div>
 
@@ -89,44 +91,124 @@
 
     <main class="container">
         <section class="row em_destaque">
-            <h1>Em destaque</h1>
+            <div class="col-12 header_destaque">
+                <h1>Em destaque</h1>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton">
+                      Categoria: TODOS
+                    </button>
+                </div>
+            </div>  
             
             <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-
+                <img src="imgs/destaques/destaque-01.jpeg" alt="Destaque 01">
             </div>
 
             <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-
+                <img src="imgs/destaques/destaque-02.jpeg" alt="Destaque 02">
             </div>
 
             <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-
+                <img src="imgs/destaques/destaque-03.jpeg" alt="Destaque 03">
             </div>
 
             <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-
+                <img src="imgs/destaques/destaque-04.jpeg" alt="Destaque 04">
             </div>
-
-            <text>Carregar mais filmes</text>
+            
+            <div class="col-12 div_carregar_mais">
+                <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais filmes</button>
+            </div>
 
         </section>
 
         <section class="row avaliacoes">
             <h1>Últimas avaliações</h1>
 
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 avaliacao">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
+                <div class="foto_avaliador_container">
+                    <img class="foto_avaliador" src="imgs/avaliadores/avaliador-01.png" alt="Avaliador 01">
+                </div>
+                
+                <div class="conteudo_avaliacao">
+                    <div class="texto_avaliacao">
+                        <h4>Letícia Nunes</h4>
+                        <p>
+                            <b class="highlight">Avaliação: </b> "Minari - Em buca da Felicidade"<br>
+                            Filme indicado a melhor filme! Merecido? pode até ser, mas tem falhas de desenvolvimento 
+                            claros e um roteiro que perde excelência em certos momentos. Pontos alto para os conflitos 
+                            na história existente e o bom elenco.
+                        </p>
+                    </div>
 
+                    <div class="estrelas_avaliacao_usuario">
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <text><b class="highlight">02/04/2021</b><text>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 avaliacao">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
+                <div class="foto_avaliador_container">
+                    <img class="foto_avaliador" src="imgs/avaliadores/avaliador-02.png" alt="Avaliador 02">
+                </div>
+                
+                <div class="conteudo_avaliacao">
+                    <div class="texto_avaliacao">
+                        <h4>Flávio Pinheiro</h4>
+                        <p>
+                            <b class="highlight">Avaliação: </b> "Tom & Jerry: O Filme"<br>
+                            Muito se especulou sobre a necessidade da realização do filme e
+                            qual impacto geraria. Vale pela nostalgia da infância, algumas piadas funcionam, mas o meio do filme é um pouco arrastado, mas da pra se divertir!
+                        </p>
+                    </div>
+                    
 
+                    <div class="estrelas_avaliacao_usuario">
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <text><b class="highlight">02/04/2021</b><text>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 avaliacao">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
+                <div class="foto_avaliador_container">
+                    <img class="foto_avaliador" src="imgs/avaliadores/avaliador-03.png" alt="Avaliador 03">
+                </div>
+                
+                <div class="conteudo_avaliacao">
+                    <div class="texto_avaliacao">
+                        <h4>Amanda Neves</h4>
+                        <p>
+                            <b class="highlight">Avaliação: </b> "Mulher-Maravilha 1984"<br>
+                            Excelente. Que roteiro. Nada de vilões triviais, mas sim as própria fraquezas humanas. 
+                            Dinâmico e envolvente. Gadot dá show e assistimos com grande prazer e alegria. 
+                            WW é a melhor personagem e filme da DC.
+                        </p>
+                    </div>
 
+                    <div class="estrelas_avaliacao_usuario">
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        <text><b class="highlight">02/04/2021</b><text>
+                    </div>
+                </div>
             </div>
 
-            <text>Carregar mais avaliações</text>
+            <div class="col-12 div_carregar_mais">
+                <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais avaliações</button>
+            </div>
 
         </section>
 
