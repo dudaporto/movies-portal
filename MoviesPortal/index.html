@@ -18,264 +18,307 @@
     <header class="container header">
         <div class="row menu">
             <div class="col-2"> 
-                <img src="imgs/logo-cinema.png" class="logo">
+                
             </div>
             <div class="col-10">
                 <nav class="nav">
-                    <a class="nav-link active" href="#">Lançamentos</a>
-                    <a class="nav-link" href="#">Em destaque</a>
-                    <a class="nav-link" href="#">Avaliações</a>
-                    <a class="nav-link" href="#">Entrevistas & Making-of</a>
-                    <a class="nav-link" href="#">Novidades</a>
+                    <a class="nav-link active" href="#lancamentos">Lançamentos</a>
+                    <a class="nav-link" href="#em_destaque">Em destaque</a>
+                    <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                    <a class="nav-link" href="#entrevistas_e_makingof">Entrevistas & Making-of</a>
+                    <a class="nav-link" href="#novidades_e_sobre">Novidades</a>
                 </nav>
             </div>
         </div>        
     </header>
-
-    <div class="containter lancamentos_containter">
-        <section class="row lancamentos">
-            <h1>Lançamentos</h1>
-            
-            <div class="col-12 col-lg-6 video_coluna">
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/Gm3o0bfGP3g" title="YouTube video player" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-6 descricao_lancamento">
-                <h2>Viúva Negra</h2>
-                <p class="sinopse">
-                    <b class="highlight">Sinopse:</b> No novo filme da Marvel Studios, "Viúva Negra", Natasha Romanoff 
-                    (Scarlett Johansson) precisa confrontar partes de sua história quando surge uma conspiração perigosa 
-                    ligada ao seu passado. Perseguida por uma força que não irá parar até derrotá-la, Natasha terá que lidar 
-                    com sua antiga vida de espiã, e também reencontrar membros de sua família que deixou para trás antes de se 
-                    tornar parte dos Vingadores.
-                </p>
-                <div class="direcao_do_filme">
-                    <text><b class="highlight">Direção: </b>Cate Shortland</text>
-                    <text><b class="highlight">Roteiro: </b>Stan Lee</text>
-                    <text><b class="highlight">Estreia: </b>2021</text>
-                </div>
-
-                <div class="elenco">
-                    <p><b class="highlight">Elenco: </b></p> 
-                    <text>Scarlett Johansson</text><span class="separador_ator">|</span>
-                    <text>Florence Pugh</text><span class="separador_ator">|</span>
-                    <text>David Harbour</text><span class="separador_ator">|</span>
-                    <text>Rachel Weisz</text>
-                </div>
-
-                <div class="avaliacao_estrelas">
-                    <p><b class="highlight">Avaliação: </b></p> 
-                    <div class="estrelas">
-                        <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-12 carrossel">
-                <div class="bolinha_carrossel"></div>
-                <div class="bolinha_carrossel"></div>
-                <div class="bolinha_carrossel"></div>
-                <div class="bolinha_carrossel"></div>
-            </div>
-
-        </section>
-    </div>
-
-
-    <main class="container">
-        <section class="row em_destaque">
-            <div class="col-12 header_destaque">
-                <h1>Em destaque</h1>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton">
-                      Categoria: TODOS
-                    </button>
-                </div>
-            </div>  
-            
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-                <img src="imgs/destaques/destaque-01.jpeg" alt="Destaque 01">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-                <img src="imgs/destaques/destaque-02.jpeg" alt="Destaque 02">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-                <img src="imgs/destaques/destaque-03.jpeg" alt="Destaque 03">
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 destaque">
-                <img src="imgs/destaques/destaque-04.jpeg" alt="Destaque 04">
-            </div>
-            
-            <div class="col-12 div_carregar_mais">
-                <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais filmes</button>
-            </div>
-
-        </section>
-
-        <section class="row avaliacoes">
-            <h1>Últimas avaliações</h1>
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
-                <div class="foto_avaliador_container">
-                    <img class="foto_avaliador" src="imgs/avaliadores/avaliador-01.png" alt="Avaliador 01">
+    <main>
+        <div class="fundo_mais_claro">
+            <section class="row" id="lancamentos">
+                <div class="col-12 title_container">
+                    <h1>Lançamentos</h1>
                 </div>
                 
-                <div class="conteudo_avaliacao">
-                    <div class="texto_avaliacao">
-                        <h4>Letícia Nunes</h4>
-                        <p>
-                            <b class="highlight">Avaliação: </b> "Minari - Em buca da Felicidade"<br>
-                            Filme indicado a melhor filme! Merecido? pode até ser, mas tem falhas de desenvolvimento 
-                            claros e um roteiro que perde excelência em certos momentos. Pontos alto para os conflitos 
-                            na história existente e o bom elenco.
-                        </p>
-                    </div>
-
-                    <div class="estrelas_avaliacao_usuario">
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <text><b class="highlight">02/04/2021</b><text>
+                <div class="col-12 col-xl-6 video_coluna">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/Gm3o0bfGP3g" title="YouTube video player" allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
-                <div class="foto_avaliador_container">
-                    <img class="foto_avaliador" src="imgs/avaliadores/avaliador-02.png" alt="Avaliador 02">
-                </div>
-                
-                <div class="conteudo_avaliacao">
-                    <div class="texto_avaliacao">
-                        <h4>Flávio Pinheiro</h4>
-                        <p>
-                            <b class="highlight">Avaliação: </b> "Tom & Jerry: O Filme"<br>
-                            Muito se especulou sobre a necessidade da realização do filme e
-                            qual impacto geraria. Vale pela nostalgia da infância, algumas piadas funcionam, mas o meio do filme é um pouco arrastado, mas da pra se divertir!
-                        </p>
-                    </div>
-                    
-
-                    <div class="estrelas_avaliacao_usuario">
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <text><b class="highlight">02/04/2021</b><text>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
-                <div class="foto_avaliador_container">
-                    <img class="foto_avaliador" src="imgs/avaliadores/avaliador-03.png" alt="Avaliador 03">
-                </div>
-                
-                <div class="conteudo_avaliacao">
-                    <div class="texto_avaliacao">
-                        <h4>Amanda Neves</h4>
-                        <p>
-                            <b class="highlight">Avaliação: </b> "Mulher-Maravilha 1984"<br>
-                            Excelente. Que roteiro. Nada de vilões triviais, mas sim as própria fraquezas humanas. 
-                            Dinâmico e envolvente. Gadot dá show e assistimos com grande prazer e alegria. 
-                            WW é a melhor personagem e filme da DC.
-                        </p>
-                    </div>
-
-                    <div class="estrelas_avaliacao_usuario">
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
-                        <text><b class="highlight">02/04/2021</b><text>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 div_carregar_mais">
-                <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais avaliações</button>
-            </div>
-
-        </section>
-
-        <section class="row entrevistas">
-            <h1>Entrevistas & Making-of</h1>
-            
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 entrevista">
-
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 entrevista">
-
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 entrevista">
-
-            </div>
-
-            <text>Carregar mais filmes</text>
-
-        </section>
-
-        <section class="row novidades_sobre">
-            <div class="col-12 col-sm-12 col-md-8 col-lg-8 novidades">
-                <h1>Novidades</h1>
-                <div class="novidade">
-
-                </div>
-                <div class="novidade">
-                    
-                </div>
-                <div class="novidade">
-                    
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 sobre_editorial">
-                <div class="sobre">
-                    <h1>Sobre</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis lacinia felis. Aliquam vitae consectetur libero. 
-                        Nam nibh risus, feugiat varius euismod vitae, luctus vel velit. Aliquam at purus metus. Etiam tempus viverra lorem, ac molestie 
-                        dolor ultricies a. Donec dictum cursus malesuada.
+    
+                <div class="col-12 col-xl-6 descricao_lancamento">
+                    <h2>Viúva Negra</h2>
+                    <p class="sinopse">
+                        <b class="highlight">Sinopse:</b> No novo filme da Marvel Studios, "Viúva Negra", Natasha Romanoff 
+                        (Scarlett Johansson) precisa confrontar partes de sua história quando surge uma conspiração perigosa 
+                        ligada ao seu passado. Perseguida por uma força que não irá parar até derrotá-la, Natasha terá que lidar 
+                        com sua antiga vida de espiã, e também reencontrar membros de sua família que deixou para trás antes de se 
+                        tornar parte dos Vingadores.
                     </p>
-                </div>
-                <div class="editorial">
-                    <h1>Editorial</h1>
-                    <div class="item_editorial">
-                        <p>Redação: Duda</p>
+                    <div class="direcao_do_filme">
+                        <text><b class="highlight">Direção: </b>Cate Shortland</text>
+                        <text><b class="highlight">Roteiro: </b>Stan Lee</text>
+                        <text><b class="highlight">Estreia: </b>2021</text>
                     </div>
-                    <div class="item_editorial">
-                        <p>Redação: Duda</p>
+    
+                    <div class="elenco">
+                        <p><b class="highlight">Elenco: </b></p> 
+                        <text>Scarlett Johansson</text><span class="separador_ator">|</span>
+                        <text>Florence Pugh</text><span class="separador_ator">|</span>
+                        <text>David Harbour</text><span class="separador_ator">|</span>
+                        <text>Rachel Weisz</text>
                     </div>
-                    <div class="item_editorial">
-                        <p>Redação: Duda</p>
+    
+                    <div class="avaliacao_estrelas">
+                        <p><b class="highlight">Avaliação: </b></p> 
+                        <div class="estrelas">
+                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-12 carrossel">
+                    <div class="bolinha_carrossel"></div>
+                    <div class="bolinha_carrossel"></div>
+                    <div class="bolinha_carrossel"></div>
+                    <div class="bolinha_carrossel"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Container da seção Em destaque e Avaliações -->
+        <div class="container">
+            <section class="row" id="em_destaque">
+                <div class="col-12 title_container">
+                    <h1>Em destaque</h1>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton">
+                          Categoria: TODOS
+                        </button>
+                    </div>
+                </div>  
+                
+                <div class="col-12 col-sm-6 col-lg-3 destaque">
+                    <img src="imgs/destaques/destaque-01.jpg" alt="Destaque 01">
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 destaque">
+                    <img src="imgs/destaques/destaque-02.jpg" alt="Destaque 02">
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 destaque destaque_para_esconder">
+                    <img src="imgs/destaques/destaque-03.jpg" alt="Destaque 03">
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3 destaque destaque_para_esconder">
+                    <img src="imgs/destaques/destaque-04.jpg" alt="Destaque 04">
+                </div>
+                
+                <div class="col-12 div_carregar_mais">
+                    <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais filmes</button>
+                </div>
+            </section>
+
+            <section class="row" id="avaliacoes">
+                <div class="title_container">
+                    <h1>Últimas avaliações</h1>
+                </div>
+    
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
+                    <div class="foto_avaliador_container">
+                        <img class="foto_avaliador" src="imgs/avaliadores/avaliador-01.png" alt="Avaliador 01">
+                    </div>
+                    
+                    <div class="conteudo_avaliacao">
+                        <div class="texto_avaliacao">
+                            <h4>Letícia Nunes</h4>
+                            <p>
+                                <b class="highlight">Avaliação: </b> "Minari - Em buca da Felicidade"<br>
+                                Filme indicado a melhor filme! Merecido? pode até ser, mas tem falhas de desenvolvimento 
+                                claros e um roteiro que perde excelência em certos momentos. Pontos alto para os conflitos 
+                                na história existente e o bom elenco.
+                            </p>
+                        </div>
+    
+                        <div class="estrelas_avaliacao_usuario">
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <text><b class="highlight">25/04/2021</b><text>
+                        </div>
                     </div>
                 </div>
-                <div class="redes_sociais">
-                    <h3>Redes sociais</h3>
-                    <img class="logo_rede_social" src="imgs/redes_sociais/facebook-logo.png" alt="facebook">
-                    <img class="logo_rede_social" src="imgs/redes_sociais/twitter-logo.png" alt="twitter">
-                    <img class="logo_rede_social" src="imgs/redes_sociais/instagram-logo.png" alt="instagram">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao">
+                    <div class="foto_avaliador_container">
+                        <img class="foto_avaliador" src="imgs/avaliadores/avaliador-02.png" alt="Avaliador 02">
+                    </div>
+                    
+                    <div class="conteudo_avaliacao">
+                        <div class="texto_avaliacao">
+                            <h4>Flávio Pinheiro</h4>
+                            <p>
+                                <b class="highlight">Avaliação: </b> "Tom & Jerry: O Filme"<br>
+                                Muito se especulou sobre a necessidade da realização do filme e
+                                qual impacto geraria. Vale pela nostalgia da infância, algumas piadas funcionam, mas o meio do filme é um pouco arrastado, mas dá pra se divertir!
+                            </p>
+                        </div>
+                        
+    
+                        <div class="estrelas_avaliacao_usuario">
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario estrela_desativada" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <text><b class="highlight">19/03/2021</b><text>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 avaliacao avaliacao_para_esconder">
+                    <div class="foto_avaliador_container">
+                        <img class="foto_avaliador" src="imgs/avaliadores/avaliador-03.png" alt="Avaliador 03">
+                    </div>
+                    
+                    <div class="conteudo_avaliacao">
+                        <div class="texto_avaliacao">
+                            <h4>Amanda Neves</h4>
+                            <p>
+                                <b class="highlight">Avaliação: </b> "Interestelar"<br>
+                                Filmaço E S P E T A C U L A R! Uma obra prima para o futuro com certeza. 
+                                Um elenco de primeiríssima com atuações magistrais. 
+                                Ficção Cientifica com um drama muito bem contado. Roteiro bem construído.
+                            </p>
+                        </div>
+    
+                        <div class="estrelas_avaliacao_usuario">
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <img class="estrela_avaliacao_usuario" src="imgs/estrela-preenchida.png" alt="estrelinha"/>
+                            <text><b class="highlight">15/02/2021</b><text>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 div_carregar_mais">
+                    <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais avaliações</button>
+                </div>
+            </section>
+        </div>
+        <div class="fundo_mais_claro">
+            <div class="container">
+                <section class="row" id="entrevistas_e_makingof">
+                    <div class="col-12 title_container">
+                        <h1>Entrevistas & Making-of</h1>
+                    </div>
+                    
+                    <div class="col-12 col-sm-12 col-lg-4 entrevista">
+                        <div class="video_entrevista">
+                            <iframe src="https://www.youtube.com/embed/1A_a_xkSEV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="descricao_entrevista">
+                            <h5><b class="highlight">Filme: </b>Mulher-maravilha 1984</h5>
+                            <text class="nome_diretoria"><b class="highlight">Diretoria: </b>Patty Jenkins</text>
+                            <text><b class="highlight">Roteiro: </b>Geoff Johns</text>
+                            <text><b class="highlight">Estreia: </b>2020</text>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-sm-12 col-lg-4 entrevista">
+                        <div class="video_entrevista">
+                            <iframe src="https://www.youtube.com/embed/ft9vFjwCvJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="descricao_entrevista">
+                            <h5><b class="highlight">Filme: </b>A Origem</h5>
+                            <text class="nome_diretoria"><b class="highlight">Diretoria: </b>Christopher Nolan</text>
+                            <text><b class="highlight">Roteiro: </b>Christopher Nolan</text>
+                            <text><b class="highlight">Estreia: </b>2010</text>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-sm-12 col-lg-4 entrevista">
+                        <div class="video_entrevista">
+                            <iframe src="https://www.youtube.com/embed/mox0_xGO-Do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="descricao_entrevista">
+                            <h5><b class="highlight">Filme: </b>Coringa</h5>
+                            <text class="nome_diretoria"><b class="highlight">Diretoria: </b>Todd Phillips</text>
+                            <text><b class="highlight">Roteiro: </b>Todd Phillips</text>
+                            <text><b class="highlight">Estreia: </b>2019</text>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 div_carregar_mais">
+                        <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais filmes</button>
+                    </div>
+                </section>
             </div>
         </div>
 
-        </section>
+        <!-- Container de novidades, sobre e editorial -->
+
+        <div class="container"> 
+            <section class="row" id="novidades_e_sobre">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 novidades">
+                    
+                    <div class="title_container">
+                        <h1>Novidades</h1>
+                    </div>
+
+                    <div class="novidade">
+    
+                    </div>
+                    <div class="novidade">
+                        
+                    </div>
+                    <div class="novidade">
+                        
+                    </div>
+                </div>
+    
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 sobre_editorial">
+                    <div class="sobre">
+                        <div class="title_container">
+                            <h1>Sobre</h1>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis lacinia felis. Aliquam vitae consectetur libero. 
+                            Nam nibh risus, feugiat varius euismod vitae, luctus vel velit. Aliquam at purus metus. Etiam tempus viverra lorem, ac molestie 
+                            dolor ultricies a. Donec dictum cursus malesuada.
+                        </p>
+                    </div>
+                    <div class="editorial">                        
+                        <h1>Editorial</h1>
+                        <div class="item_editorial">
+                            <p>Redação: Duda</p>
+                        </div>
+                        <div class="item_editorial">
+                            <p>Redação: Duda</p>
+                        </div>
+                        <div class="item_editorial">
+                            <p>Redação: Duda</p>
+                        </div>
+                    </div>
+                    <div class="redes_sociais">
+                        <h3>Redes sociais</h3>
+                        <img class="logo_rede_social" src="imgs/redes_sociais/facebook-logo.png" alt="facebook">
+                        <img class="logo_rede_social" src="imgs/redes_sociais/twitter-logo.png" alt="twitter">
+                        <img class="logo_rede_social" src="imgs/redes_sociais/instagram-logo.png" alt="instagram">
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </main>
+   
     <footer class="container footer">
         <p>Copyright 2021 - DIW</p>
     </footer>
