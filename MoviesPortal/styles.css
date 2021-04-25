@@ -9,6 +9,7 @@ body {
 
 .highlight {
     color: #ffc857;
+    font-weight: bold;
 }
 
 .estrela_desativada {
@@ -168,16 +169,78 @@ section {
     margin-right: 1em;
 }
 
-/* Novidades, Sobre, Editorial e Redes Sociais */
+/* Novidades */
 
 .novidade {
-    background-color: thistle;
-    border: 2px solid gray;
-    min-height: 200px;
+    border-bottom: 2px solid #191919;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
+
+.img_novidade_container > img {
+    border-radius: 2%;
+    max-height: 150px;
+    max-width: 100%;
+}
+
+.img_novidade_container {
+    float: left;
+    margin: 0 1em 1em 0;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo_novidade > p {
+    text-align: justify;
+}
+
+.tag_novidade {
+    padding: 0.1em 1em;
+    border-radius: 1em;
+    margin: 0.1em 0.1em 0.1em 0;
+    font-size: 0.75em;
+    background-color: #ffc857;
+    color: #090809;
+    font-weight: 550;
+    display: inline-block;
+}
+
+/* Sobre */
+
+.sobre_editorial {
+    padding-left: 2em;
+}
+
+.sobre > p {
+    text-align: justify;
+}
+
+/* Editorial */
+
+.item_editorial {
+    padding: 0.5em 0;
+    display: flex;
+    align-items: center;
+}
+
+.item_editorial > img {
+    padding-right: 0.5em;
+}
+
+.editorial {
+    margin: 0.5em 0;
+}
+
+/* Redes sociais */
 
 .redes_sociais > h3 {
     margin-bottom: 0.5em;
+}
+
+.redes_sociais > a {
+    text-decoration: none;
 }
 
 .logo_rede_social {
@@ -213,6 +276,31 @@ section {
         justify-content: center;
     }
 
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .img_novidade_container {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .img_novidade_container > img {
+        max-height: 250px;
+    }
+
+    .div_carregar_mais {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    } 
+
+    .sobre_editorial {
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+
     /* Esconde cards quando ocupa a largura toda */
     .destaque_para_esconder {
         display: none;
@@ -221,12 +309,6 @@ section {
     .avaliacao_para_esconder {
         display: none;
     }
-
-    .div_carregar_mais {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    } 
 }
 
 /* Large */
