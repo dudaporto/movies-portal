@@ -28,6 +28,69 @@ section {
     padding-bottom: 2em;
 }
 
+/* Menu de navegação */
+
+.logo-container > img {
+    max-height: 2.5em;
+}
+
+.menu {
+    display: flex;
+    padding: 1.5em;
+    align-items: center;
+}
+
+.nav-item {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: #ffc857;
+}
+
+.input-pesquisar {
+    background: url(imgs/ic_pesquisa-inativo.png) no-repeat scroll 10px;
+    background-size: 20px;
+    padding-left: 40px;
+    height: 100%;
+    border: 1px solid #3d3b3b;
+    border-radius: 5px;
+    color: white;
+}
+
+.input-pesquisar:focus {
+    background-image: url(imgs/ic_pesquisa-ativo.png);
+    outline: none;
+    border-color: #ffc857;
+}
+
+.input-container {
+    float: left;
+    height: 40px;
+}
+
+.carousel-control-prev {
+    margin-left: -15%;
+}
+
+.carousel-control-next {
+    margin-right: -15%;
+}
+
+.carousel-indicators {
+    margin-bottom: -3em;
+}
+
+#lancamentos {
+    padding-bottom: 6em;
+}
+
+.carousel-indicators > .active {
+    background-color: #ffc857;
+}
+
 /* Aba Lançamentos */
 
 #lancamentos {
@@ -40,11 +103,13 @@ section {
 }
 
 .descricao_lancamento {
-    padding: 0 0 1em 1em;
+    padding: 1em;
 }
 
 .video {
     width: 100%;
+    height: 100%;
+    min-height: 20em;
 }
 
 .video > iframe {
@@ -85,19 +150,6 @@ section {
     margin: 2em 0 1em 0;
 }
 
-.bolinha_carrossel {
-    background-color: gray;
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 4px;
-}
-
-.bolinha_carrossel:nth-child(1) {
-    background-color: #ffc857;
-}
-
 /* Aba destaques */
 
 #em_destaque h1 {
@@ -120,17 +172,24 @@ section {
 }
 
 /* Aba Avaliações */
+
 .avaliacao {
+    display: flex;
     margin-bottom: 1em;
     padding-right: 1em;
 }
 
 .foto_avaliador {
     border-radius: 50%;
+    object-fit: cover;
     max-width: 50px;
 }
 
-.texto_avaliacao > p {
+.conteudo_avaliacao {
+    padding-left: 1em;
+}
+
+.texto-avaliacao > p {
     text-align: justify;
 }
 
@@ -139,7 +198,7 @@ section {
 }
 
 .estrela_avaliacao_usuario {
-    width: 1.5em;
+    width: 1em;
 }
 
 /* Aba Entrevistas */
@@ -249,6 +308,21 @@ section {
     margin-right: 1em;
 }
 
+/* Footer */
+footer {
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+footer > img {
+    margin-left: 1em;
+    max-height: 2em;
+}
+
+
 /* Media Queries */
 
 /* Small */
@@ -274,7 +348,7 @@ section {
         align-items: center;
         display: flex;
         justify-content: center;
-    }
+    }  
 
     section {
         padding-left: 5%;
@@ -314,7 +388,6 @@ section {
 /* Large */
 @media screen and (max-width:992px) {
     .descricao_lancamento {
-        padding: 0;
         margin-top: 1.5em;
     }
 
@@ -344,5 +417,19 @@ section {
 
     .div_carregar_mais {
         margin-top: 1em;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .input-container {
+        display: none;
+    } 
+
+    .menu {
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 }
