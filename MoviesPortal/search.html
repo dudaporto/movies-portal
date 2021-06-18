@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portal de filmes</title>
+</head>
+
+<body onload="getSearchResults()">
+
+    <!-- Navigation Bar-->
+    <header class="container header">
+        <div class="row menu">
+            <div class="col-2 logo-container">
+                <img src="imgs/logo.png" alt="Logo do site"/>
+            </div>
+            
+            <nav class="nav-menu col-8">
+                <a class="nav-item" href="index.html#lancamentos">Lançamentos</a>
+                <a class="nav-item" href="index.html#em_destaque">Em destaque</a>
+                <a class="nav-item" href="index.html#avaliacoes">Avaliações</a>
+                <a class="nav-item" href="index.html#entrevistas_e_makingof">Entrevistas & Making-of</a>
+                <a class="nav-item" href="index.html#novidades_e_sobre">Novidades</a>
+            </nav>
+
+            <div class="input-container col-2">
+                <input type="search" id="input-pesquisar" placeholder="Pesquisar filme" required/>
+                <button onClick="setKeywordSearch();" type="submit" id="search-button"><img src="imgs/ic_pesquisa-ativo.png"></button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Resultados da pesquisa -->
+    <div class="fundo_mais_claro">
+        <div class="container">
+            <section class="row" id="section-search">
+                <div class="col-12 title-container">
+                    <h1>Resultados</h1>
+                    <p id="texto-busca"></p>
+                </div>
+
+            </section>
+        </div>
+
+
+        <footer>
+            <text>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <span class="highlight">ICEI PUC Minas</span></text>
+            <img src="imgs/logo.png" alt="Logo do site"/>
+        </footer>
+
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+            </script>
+
+        <!-- API The Movie DB -->
+        <script src="script.js"></script>
+
+</body>
+
+</html>

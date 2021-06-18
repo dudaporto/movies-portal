@@ -40,7 +40,8 @@
             </nav>
 
             <div class="input-container col-2">
-                <input type="search" class="input-pesquisar" placeholder="Pesquisar filme" />
+                <input type="search" id="input-pesquisar" placeholder="Pesquisar filme" required/>
+                <button onClick="setKeywordSearch();" type="submit" id="search-button"><img src="imgs/ic_pesquisa-ativo.png"></button>
             </div>
 
         </div>
@@ -225,26 +226,8 @@
         <!-- Container da seção Em destaque e Avaliações -->
         <div class="container">
             <section class="row" id="em_destaque">
-                <div class="col-12 title_container">
+                <div class="col-12 title_container hidden-div">
                     <h1>Em destaque</h1>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Categoria: Todos
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item active" href="#">Aventura</a></li>
-                            <li><a class="dropdown-item" href="#">Romance</a></li>
-                            <li><a class="dropdown-item" href="#">Comédia</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="#container-top-rated" class="row">
-                </div>
-
-                <div class="col-12 div_carregar_mais">
-                    <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais filmes</button>
                 </div>
             </section>
 
