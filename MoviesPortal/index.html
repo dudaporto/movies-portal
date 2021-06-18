@@ -13,10 +13,18 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <!-- API The Movie DB -->
+    <script src="script.js"></script>
+
     <title>Portal de filmes</title>
 </head>
 
-<body>
+<body onload="getTopRated()">
     <header class="container header">
         <div class="row menu">
             <div class="col-2 logo-container">
@@ -232,20 +240,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 destaque">
-                    <img src="imgs/destaques/destaque-01.jpg" alt="Destaque 01">
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 destaque">
-                    <img src="imgs/destaques/destaque-02.jpg" alt="Destaque 02">
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 destaque destaque_para_esconder">
-                    <img src="imgs/destaques/destaque-03.jpg" alt="Destaque 03">
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3 destaque destaque_para_esconder">
-                    <img src="imgs/destaques/destaque-04.jpg" alt="Destaque 04">
+                <div id="#container-top-rated" class="row">
                 </div>
 
                 <div class="col-12 div_carregar_mais">
