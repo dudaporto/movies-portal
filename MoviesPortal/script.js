@@ -42,6 +42,7 @@ function getSearchResults() {
           <div class="col-12 col-sm-6 col-lg-3 destaque">
             <a href="https://www.themoviedb.org/movie/${movie.id}" target="_blank">
               <img src="${imgUrl}" alt="Destaque 01">
+              <p>${movie.original_title}</p>
               </a>
           </div>
           
@@ -55,10 +56,9 @@ function presentSearchError(keyword) {
   $("#texto-busca").html(`Não encontramos resultados para "${keyword}"`);
 }
 
-function getTopRated() {
-    console.log("teste");
-    let endpoint = `/3/movie/top_rated`;
-    let params = `api_key=${apiKey}&language=pt-BR&page=1`;
+function getTopRated(page) {
+    let endpoint = `/3/movie/popular`;
+    let params = `api_key=${apiKey}&language=pt-BR&page=${page}`;
   
     let url = `https://${apiDomain}${endpoint}?${params}}`;
   
@@ -73,7 +73,7 @@ function getTopRated() {
           console.log(imgUrl);
     
           $('#em_destaque').append(`
-              <div class="col-12 col-sm-6 col-lg-3 destaque destaque_para_esconder">
+              <div class="col-12 col-sm-6 col-lg-3 destaque ${index > 1 ? "destaque_para_esconder" : ""}">
                 <a href="https://www.themoviedb.org/movie/${movie.id}" target="_blank">
                   <img src="${imgUrl}" alt="Destaque 01">
                 </a>
@@ -81,10 +81,19 @@ function getTopRated() {
           `);
         });
    
-        $('#em_destaque').append(`
-        <div class="col-12 div_carregar_mais">
-          <button type="button" class="btn btn-outline-warning carregar_mais">Carregar mais filmes</button>
-        </div>`);
+        if(quantity < 16) {
+            $('#em_destaque').append(`
+          <div class="col-12 div_carregar_mais">
+            <button onClick="loadMore()" type="button" class="btn btn-outline-warning carregar_mais">Carregar mais filmes</button>
+          </div>`);
+        }
       }
     });
+  }
+
+  function loadMore() {
+    quantity += 4;
+    $("#em_destaque .div_carregar_mais").remove();
+    $("#em_destaque .destaque").remove();
+    getTopRated();
   }
