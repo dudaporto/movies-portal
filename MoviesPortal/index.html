@@ -24,7 +24,7 @@
     <title>Portal de filmes</title>
 </head>
 
-<body onload="getTopRated()">
+<body onload="loadContent()">
     <header class="container header">
         <div class="row menu">
             <div class="col-2 logo-container">
@@ -48,7 +48,7 @@
     </header>
     <main>
         <div class="fundo_mais_claro">
-            <section id="lancamentos">
+            <section id="lancamentos" class="hidden-div">
                 <div class="col-12 title_container">
                     <h1>Lançamentos</h1>
                 </div>
@@ -60,152 +60,15 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="row item-lancamento">            
-                                <div class="col-12 col-xl-6 video_coluna">
-                                    <div class="video">
-                                        <iframe src="https://www.youtube.com/embed/tMHwdVOFkUw" title="YouTube video player" allowfullscreen></iframe>
-                                    </div>
-            
-                                </div>
-            
-                                <div class="col-12 col-xl-6 descricao_lancamento">
-                                    <h2>Godzilla vs. Kong</h2>
-                                    <p class="sinopse">
-                                        <span class="highlight">Sinopse:</span> As lendas se enfrentam em "Godzilla vs. Kong", 
-                                        quando esses adversários míticos se encontram em uma espetacular batalha, na qual o destino 
-                                        do mundo entrará em jogo. Kong e seus protetores embarcam em uma jornada perigosa para encontrar 
-                                        seu verdadeiro lar. Com eles está Jia, uma jovem órfã que tem uma ligação única e forte com Kong. 
-                                        Mas eles não sabiam que estavam no caminho de um Godzilla enfurecido, que está deixando um rastro
-                                         de destruição pelo planeta. 
-                                    </p>
-                                    <div class="direcao_do_filme">
-                                        <text><span class="highlight">Direção: </span>Adam Wingard</text>
-                                        <text><span class="highlight">Roteiro: </span>Max Borenstein</text>
-                                        <text><span class="highlight">Estreia: </span>2021</text>
-                                    </div>
-            
-                                    <div class="elenco">
-                                        <p><span class="highlight">Elenco: </span></p>
-                                        <text>Millie Bobby Brown</text><span class="separador_ator">|</span>
-                                        <text>Rebecca Hall</text><span class="separador_ator">|</span>
-                                        <text>Alexander Skarsgård</text>
-                                    </div>
-            
-                                    <div class="avaliacao_estrelas">
-                                        <p><span class="highlight">Avaliação: </span></p>
-                                        <div class="estrelas">
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png"
-                                                alt="estrelinha" />
-                                        </div>
-                                    </div>
-            
-                                </div>
+                            <div class="row item-lancamento" id="slide-0">            
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row item-lancamento">            
-                                <div class="col-12 col-xl-6 video_coluna">
-                                    <div class="video">
-                                        <iframe src="https://www.youtube.com/embed/Gm3o0bfGP3g" title="YouTube video player"
-                                            allowfullscreen></iframe>
-                                    </div>
-            
-                                </div>
-            
-                                <div class="col-12 col-xl-6 descricao_lancamento">
-                                    <h2>Viúva Negra</h2>
-                                    <p class="sinopse">
-                                        <span class="highlight">Sinopse:</span> No novo filme da Marvel Studios, "Viúva Negra",
-                                        Natasha
-                                        Romanoff
-                                        (Scarlett Johansson) precisa confrontar partes de sua história quando surge uma conspiração
-                                        perigosa
-                                        ligada ao seu passado. Perseguida por uma força que não irá parar até derrotá-la, Natasha
-                                        terá
-                                        que lidar
-                                        com sua antiga vida de espiã, e também reencontrar membros de sua família que deixou para
-                                        trás
-                                        antes de se
-                                        tornar parte dos Vingadores.
-                                    </p>
-                                    <div class="direcao_do_filme">
-                                        <text><span class="highlight">Direção: </span>Cate Shortland</text>
-                                        <text><span class="highlight">Roteiro: </span>Stan Lee</text>
-                                        <text><span class="highlight">Estreia: </span>2021</text>
-                                    </div>
-            
-                                    <div class="elenco">
-                                        <p><span class="highlight">Elenco: </span></p>
-                                        <text>Scarlett Johansson</text><span class="separador_ator">|</span>
-                                        <text>Florence Pugh</text><span class="separador_ator">|</span>
-                                        <text>David Harbour</text><span class="separador_ator">|</span>
-                                        <text>Rachel Weisz</text>
-                                    </div>
-            
-                                    <div class="avaliacao_estrelas">
-                                        <p><span class="highlight">Avaliação: </span></p>
-                                        <div class="estrelas">
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao estrela_desativada" src="imgs/estrela-preenchida.png"
-                                                alt="estrelinha" />
-                                        </div>
-                                    </div>
-            
-                                </div>
+                            <div class="row item-lancamento" id="slide-1">            
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="row item-lancamento">            
-                                <div class="col-12 col-xl-6 video_coluna">
-                                    <div class="video">
-                                        <iframe src="https://www.youtube.com/embed/ndDeNIOgsYo" title="YouTube video player" allowfullscreen></iframe>
-                                    </div>
-            
-                                </div>
-            
-                                <div class="col-12 col-xl-6 descricao_lancamento">
-                                    <a href="https://www.themoviedb.org/movie/337404" target="_blank"><h2>Cruella</h2></a>
-                                    <p class="sinopse">
-                                        <span class="highlight">Sinopse:</span> Inteligente, criativa e determinada, Estella 
-                                        quer fazer um nome para si através de seus designs e acaba chamando a atenção da Baronesa
-                                        Von Hellman. Entretanto, o relacionamento delas desencadeia um curso de eventos e revelações
-                                        que fazem com que Estella abrace seu lado rebelde e se torne a Cruella, uma pessoa má, elegante 
-                                        e voltada para a vingança.
-                                    </p>
-                                    <div class="direcao_do_filme">
-                                        <text><span class="highlight">Direção: </span>Craig Gillespie</text>
-                                        <text><span class="highlight">Roteiro: </span>Tony McNamara</text>
-                                        <text><span class="highlight">Estreia: </span>2021</text>
-                                    </div>
-            
-                                    <div class="elenco">
-                                        <p><span class="highlight">Elenco: </span></p>
-                                        <text>Emma Stone</text><span class="separador_ator">|</span>
-                                        <text>Emma Thompson</text><span class="separador_ator">|</span>
-                                        <text>Emily Beecham</text><span class="separador_ator">|</span>
-                                        <text>Paul Walter Hauser</text>
-                                    </div>
-            
-                                    <div class="avaliacao_estrelas">
-                                        <p><span class="highlight">Avaliação: </span></p>
-                                        <div class="estrelas">
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao" src="imgs/estrela-preenchida.png" alt="estrelinha" />
-                                            <img class="estrela_avaliacao estrela_desativada" src="imgs/estrela-preenchida.png"
-                                                alt="estrelinha" />
-                                        </div>
-                                    </div>
-            
-                                </div>
+                            <div class="row item-lancamento" id="slide-2">            
                             </div>
                         </div>
                     </div>
